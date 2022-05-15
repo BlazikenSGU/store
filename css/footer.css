@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+:root{
+    --abc:#28559A;
+    --aaa: #01345B;
+    --green:#27ae60;
+    --orange:#f39c12;
+    --red:#e0230d;
+    --black:#333;
+    --light-color:#666;
+    --white:#fff;
+    --light-bg:#f6f6f6;
+
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1); 
+}
+
+.footer{
+    background-color:white;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.footer .box-container .box h3{
+    text-transform: uppercase;
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.footer .box-container .box a,
+.footer .box-container .box p{
+    display: block;
+    padding: 1.3rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+
+.footer .box-container .box a i,
+.footer .box-container .box p i{
+    color:var(--green);
+    padding-right: 1rem;
+}
+
+.footer .box-container .box a:hover{
+    text-decoration: underline;
+    color:var(--green);
+}
+
+.footer .credit{
+    margin-top: 2rem;
+    padding: 2rem 1.5rem;
+    line-height: 1.5;
+    border-top: var(--border);
+    text-align: center;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.footer .credit span{
+    color:var(--red);
+}
