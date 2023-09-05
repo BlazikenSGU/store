@@ -1,0 +1,96 @@
+@import url('components.css');
+@import url('header.css');
+
+:root{
+    --abc:#28559A;
+    --aaa: #01345B;
+    --green:#27ae60;
+    --green2:#0b7437;
+    --orange:#f39c12;
+    --red:#e0230d;
+    --black:#333;
+    --light-color:#666;
+    --white:#fff;
+    --light-bg:#f6f6f6;
+
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1); 
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    text-transform: uppercase;
+    color:black;
+    font-size: 3rem;
+}
+
+.update-profile form{
+    max-width: 70rem;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.update-profile form img{
+    height: 20rem;
+    width: 20rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.update-profile form .inputBOX span{
+    display: block;
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    color: #666;
+}
+
+.update-profile form .inputBOX .box{
+    width: 100%;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.8rem;
+    color: black;
+    border: .2rem solid black;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+
+}
+
+.update-profile form .flex{
+    gap:1.5rem;
+    justify-content: space-between; 
+}
+
+.update-profile form .inputBOX{
+    text-align: left;
+    width: 100%;
+}
+
+.btn:hover{
+    background-color: var(--light-color);
+}
+
+.btn,
+.option-btn{
+    display: block;
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: .5rem;
+    color:var(--white);
+    font-size: 2rem;
+    padding:1.3rem 3rem;
+    text-transform: capitalize;
+    cursor: pointer;
+    text-align: center;
+    background: linear-gradient(to right, #ff00cc, #333399);
+}
+

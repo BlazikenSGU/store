@@ -1,0 +1,64 @@
+:root{
+    --abc:#28559A;
+    --aaa: #01345B;
+    --green:#27ae60;
+    --orange:#f39c12;
+    --red:#e0230d;
+    --black:#333;
+    --light-color:#666;
+    --white:#fff;
+    --light-bg:#f6f6f6;
+
+    --border:.2rem solid var(--black);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1); 
+}
+
+@keyframes fadeIn {
+    0%{
+       transform: translateY(1rem);
+    }
+ }
+
+.header .flex .profile{
+    position: absolute;
+    top:120%;
+    right:2rem;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--white);
+    width: 35rem;
+    display: none;
+    animation: fadeIn .2s linear;
+}
+
+.header .flex .profile.active{
+    display: inline-block;
+}
+
+.header .flex .profile img{
+    height: 17rem;
+    width: 17rem;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.header .flex .profile .btn{
+    font-size: 1.9rem;
+    height: 5.3rem;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+.header .flex .profile p {
+    font-size: 2rem;
+    padding: .3rem 0;
+   
+}
+
+
+
